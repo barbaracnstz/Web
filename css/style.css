@@ -3374,6 +3374,12 @@ ol {
 		margin: 0;
 		border-bottom: 1px solid #e1e1e1;
 	}
+
+	.nos{
+		width: 1000px;
+		height: 1000px;
+	}
+
 	.humberger__menu__wrapper .slicknav_nav a:hover {
 		-webkit-border-radius: 0;
 		border-radius: 0;
