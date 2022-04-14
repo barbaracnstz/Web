@@ -47,12 +47,12 @@
                         <li><a href="#">Perfiles</a></li>
                     </ul>
                 </li>
-                <li><a href="./facturas.html">Facturas</a></li>
+                <li><a href="facturas.html">Facturas</a></li>
 
                 <li><a href="#">Productos</a>
                     <ul class="header__menu__dropdown">
                         <li><a href="./stock-admin.html">Stock</a></li>
-                        <li><a href="./historial-de-ventas-admin.html">Historial de Ventas</a></li>
+                        <li><a href="./shop-details.html">Historial de Ventas</a></li>
                     </ul>
                 </li>
 
@@ -92,15 +92,15 @@
                             </li>
                             <li><a href="./shop-grid.html">Permisos</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./permisos-admin.html">Perfiles</a></li>
+                                    <li><a href="./shop-details.html">Perfiles</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./facturas.html">Facturas</a></li>
+                            <li><a href="./shop-grid.html">Facturas</a></li>
     
                             <li><a href="#">Productos</a>
                                 <ul class="header__menu__dropdown">
                                     <li><a href="./stock-admin.html">Stock</a></li>
-                                    <li><a href="./historial-de-ventas-admin.html">Historial de Ventas</a></li>
+                                    <li><a href="./shop-details.html">Historial de Ventas</a></li>
                                 </ul>
                             </li>
     
@@ -118,58 +118,44 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-8">
                 <div class="input-group">
-                    <input type="search" class="form-control rounded" placeholder="INGRESE ID DE USUARIO" aria-label="Search" aria-describedby="search-addon" />
+                    <input type="search" class="form-control rounded" placeholder="INGRESE ID CLIENTE" aria-label="Search" aria-describedby="search-addon" />
                 </div>
                     <button type="button" class="btn btn-outline-primary">BUSCAR</button>
                   </div>
-            
-            <div class="col-4">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      ADMINISTRADOR
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                      REGISTRADO
-                    </label>
-                  </div>
-            </div>
         </div>
         <br>
-        <h2>USUARIOS</h2>
+        <h2>PERMISOS USUARIOS</h2>
         <div class="row">
             <div class="col-12">
                 <table class="table">
                     <thead class="thead-dark">
                       <tr>
-                        <th scope="col">ID CLIENTE</th>
-                        <th scope="col">NOMBRE</th>
-                        <th scope="col">CORREO</th>
-                        <th scope="col">TIPO</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">ESTADO CUENTA</th>
+
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>fels@gmail.com</td>
-                        <td>REGISTRADO</td>
+                        <td>Benjamin Calderon</td>
+                        <td><input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">ACTIVO</label><br></td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>fels@gmail.com</td>
-                        <td>REGISTRADO</td>
+                        <th scope="row">1</th>
+                        <td>Carolina Giraldo</td>
+                        <td><input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">ACTIVO</label><br></td>
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>fels@gmail.com</td>
-                        <td>ADMINISTRADOR</td>
+                        <th scope="row">1</th>
+                        <td>Harry Style</td>
+                        <td><input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">ACTIVO</label><br></td>
                       </tr>
+
                     </tbody>
                   </table>
                   
