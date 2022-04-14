@@ -114,12 +114,12 @@
                                 <li><a href="./shop-details.html">Perfiles</a></li>
                             </ul>
                         </li>
-                        <li><a href="./facturas.html">Facturas</a></li>
+                        <li><a href="./shop-grid.html">Facturas</a></li>
 
                         <li><a href="#">Productos</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="./stock-admin.html">Stock</a></li>
-                                <li><a href="./historial-de-ventas-admin.html">Historial de Ventas</a></li>
+                                <li><a href="./shop-details.html">Historial de Ventas</a></li>
                             </ul>
                         </li>
 
@@ -133,90 +133,80 @@
         <div class="row">
             <div class="col-4">
                 <div class="input-group">
-                    <input type="search" class="form-control rounded" placeholder="INGRESE ID DE USUARIO" aria-label="Search" aria-describedby="search-addon" />
+                    <input type="search" class="form-control rounded" placeholder="INGRESE ID DE HISTORIAL" aria-label="Search" aria-describedby="search-addon" />
                     <button type="button" class="btn btn-outline-primary">BUSCAR</button>
                   </div>
             </div>
-            <div class="col-4">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      ANÓNIMO
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                      REGISTRADO
-                    </label>
-                  </div>
-            </div>
+
         </div>
         <br>
-        <h2>USUARIOS</h2>
+        <h2>HISTORIAL DE VENTAS</h2>
         <div class="row">
             <div class="col-12">
                 <table class="table">
                     <thead class="thead-dark">
                       <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Apellido</th>
-                        <th scope="col">Correo</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Fecha Venta</th>
+                        <th scope="col">Cant. de Productos</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Total Venta</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Benjamin</td>
-                        <td>Calderon</td>
-                        <td>bcalderon@gmail.com</td>
+                        <td>Benjamin Calderon</td>
+                        <td>10/04/2022</td>
+                        <td>5</td>
+                        <td>Venta Exitosa</td>
+                        <td>$56.990</td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>Carolina</td>
-                        <td>Giraldo</td>
-                        <td>cgiraldo31@gamil.com</td>
+                        <td>Carolina Giraldo</td>
+                        <td>09/04/2022</td>
+                        <td>1</td>
+                        <td>Venta Exitosa</td>
+                        <td>$10.990</td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td>Harry</td>
-                        <td>Style</td>
-                        <td>harrystyle@gmail.com</td>
+                        <td>Harry Style</td>
+                        <td>07/04/2022</td>
+                        <td>2</td>
+                        <td>Venta Exitosa</td>
+                        <td>$25.990</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Adele Blue</td>
+                        <td>06/04/2022</td>
+                        <td>1</td>
+                        <td>Venta Exitosa</td>
+                        <td>$10.990</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Edward Sheeran</td>
+                        <td>05/04/2022</td>
+                        <td>1</td>
+                        <td>Venta Exitosa</td>
+                        <td>$21.990</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Pablo Alborán</td>
+                        <td>03/04/2022</td>
+                        <td>2</td>
+                        <td>Venta Exitosa</td>
+                        <td>$15.990</td>
                       </tr>
                     </tbody>
                   </table>
                   
-                  <table class="table">
-                    <thead class="thead-light">
-                      <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Apellido</th>
-                        <th scope="col">Correo</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Adele</td>
-                        <td>Blue</td>
-                        <td>adeleblue@gmail.com</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Edward</td>
-                        <td>Sheeran</td>
-                        <td>esheeran@gmail.com</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Pablo</td>
-                        <td>Alborán</td>
-                        <td>alboran@gmail.com</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  
                 
             </div>
         </div>
