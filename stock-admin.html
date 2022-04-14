@@ -118,7 +118,7 @@
 
                         <li><a href="#">Productos</a>
                             <ul class="header__menu__dropdown">
-                                <li><a href="./stock-admin.html">Stock</a></li>
+                                <li><a href="./shop-details.html">Stock</a></li>
                                 <li><a href="./shop-details.html">Historial de Ventas</a></li>
                             </ul>
                         </li>
@@ -133,7 +133,7 @@
         <div class="row">
             <div class="col-4">
                 <div class="input-group">
-                    <input type="search" class="form-control rounded" placeholder="INGRESE ID DE USUARIO" aria-label="Search" aria-describedby="search-addon" />
+                    <input type="search" class="form-control rounded" placeholder="INGRESE ID DE STOCK" aria-label="Search" aria-describedby="search-addon" />
                     <button type="button" class="btn btn-outline-primary">BUSCAR</button>
                   </div>
             </div>
@@ -141,73 +141,98 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      ADMINISTRADOR
+                      DISPONIBLE
                     </label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      REGISTRADO
+                      AGOTADO
                     </label>
                   </div>
             </div>
         </div>
         <br>
-        <h2>USUARIOS</h2>
+        <h2>STOCK</h2>
         <div class="row">
             <div class="col-12">
                 <table class="table">
                     <thead class="thead-dark">
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">PRODUCTO</th>
+                        <th scope="col">COLOR</th>
+                        <th scope="col">ESTADO</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>Identificación </td>
+                        <td>Azul</td>
+                        <td>DISPONIBLE</td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td>Identificación</td>
+                        <td>Morado</td>
+                        <td>DISPONIBLE</td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
+                        <td>Identificación</td>
+                        <td>Rojo</td>
+                        <td>DISPONIBLE</td>
                       </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Bandana</td>
+                        <td>Batman</td>
+                        <td>DISPONIBLE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Bandana</td>
+                        <td>Catdog</td>
+                        <td>DISPONIBLE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>Correa Automática</td>
+                        <td>Negra</td>
+                        <td>DISPONIBLE</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>Arnes de tiras</td>
+                        <td>Verde</td>
+                        <td>DISPONIBLE</td>
+                      </tr>
+
                     </tbody>
                   </table>
                   
                   <table class="table">
                     <thead class="thead-light">
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">PRODUCTO</th>
+                        <th scope="col">COLOR</th>
+                        <th scope="col">ESTADO</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <th scope="row">4</th>
+                        <td>Bandana</td>
+                        <td>Stitch</td>
+                        <td>AGOTADO</td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <th scope="row">9</th>
+                        <td>Correa Cuero</td>
+                        <td>Negra</td>
+                        <td>AGOTADO</td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
@@ -221,6 +246,7 @@
             </div>
         </div>
     </div>
+    <BR>
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
