@@ -114,12 +114,12 @@
                                 <li><a href="./shop-details.html">Perfiles</a></li>
                             </ul>
                         </li>
-                        <li><a href="./facturas.html">Facturas</a></li>
+                        <li><a href="./shop-grid.html">Facturas</a></li>
 
                         <li><a href="#">Productos</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="./stock-admin.html">Stock</a></li>
-                                <li><a href="./historial-de-ventas-admin.html">Historial de Ventas</a></li>
+                                <li><a href="./shop-details.html">Historial de Ventas</a></li>
                             </ul>
                         </li>
 
@@ -133,87 +133,57 @@
         <div class="row">
             <div class="col-4">
                 <div class="input-group">
-                    <input type="search" class="form-control rounded" placeholder="INGRESE ID DE USUARIO" aria-label="Search" aria-describedby="search-addon" />
+                    <input type="search" class="form-control rounded" placeholder="INGRESE ID FACTURA" aria-label="Search" aria-describedby="search-addon" />
                     <button type="button" class="btn btn-outline-primary">BUSCAR</button>
-                  </div>
-            </div>
-            <div class="col-4">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      ANÓNIMO
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                      REGISTRADO
-                    </label>
                   </div>
             </div>
         </div>
         <br>
-        <h2>USUARIOS</h2>
+        <h2>Facturas</h2>
         <div class="row">
             <div class="col-12">
-                <table class="table">
-                    <thead class="thead-dark">
+                <table class="table table-striped">
+                    <thead>
                       <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Apellido</th>
-                        <th scope="col">Correo</th>
+                        <th scope="col">ID Factura</th>
+                        <th scope="col">ID Cliente</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Total</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Benjamin</td>
-                        <td>Calderon</td>
-                        <td>bcalderon@gmail.com</td>
+                        <th scope="row">101</th>
+                        <td>010</td>
+                        <td>Claudio Rojas</td>
+                        <td>12/01/2022</td>
+                        <td>$20.000</td>
+                        <td><button type="button" class="btn btn-primary">VER</button></td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Carolina</td>
-                        <td>Giraldo</td>
-                        <td>cgiraldo31@gamil.com</td>
+                        <th scope="row">102</th>
+                        <td>011</td>
+                        <td>Mark Gonzales</td>
+                        <td>12/02/2022</td>
+                        <td>$25.000</td>
+                        <td><button type="button" class="btn btn-primary">VER</button></td>
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
-                        <td>Harry</td>
-                        <td>Style</td>
-                        <td>harrystyle@gmail.com</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  
-                  <table class="table">
-                    <thead class="thead-light">
-                      <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Apellido</th>
-                        <th scope="col">Correo</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Adele</td>
-                        <td>Blue</td>
-                        <td>adeleblue@gmail.com</td>
+                        <th scope="row">103</th>
+                        <td>012</td>
+                        <td>Larry Olmes</td>
+                        <td>15/02/2022</td>
+                        <td>$30.000</td>
+                        <td><button type="button" class="btn btn-primary">VER</button></td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Edward</td>
-                        <td>Sheeran</td>
-                        <td>esheeran@gmail.com</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Pablo</td>
-                        <td>Alborán</td>
-                        <td>alboran@gmail.com</td>
+                        <th scope="row">104</th>
+                        <td>015</td>
+                        <td>Claudio Rojas</td>
+                        <td>12/01/2022</td>
+                        <td>$10.000</td>
+                        <td><button type="button" class="btn btn-primary">VER</button></td>
                       </tr>
                     </tbody>
                   </table>
