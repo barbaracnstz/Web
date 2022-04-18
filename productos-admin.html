@@ -109,7 +109,9 @@
         </div>
     </header>
     <!-- Header Section End -->
+    
     <div class="container">
+        <h2>PRODUCTOS</h2>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-8">
                 <div class="input-group">
@@ -119,7 +121,48 @@
                   </div>
         </div>
         <br>
-        <h2>PRODUCTOS</h2>
+        <h3>AGREGAR PRODUCTO</h3>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-10">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">IMG</th>
+                        <th scope="col">NOMBRE PRODUCTO</th>
+                        <th scope="col">STATUS</th>
+                        <th scope="col">PRECIO</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><form>
+                            <div class="form-group">
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                          </form></th>
+                        <td><input class="form-control" type="text" placeholder="NOMBRE PRODUCTO"></td>
+                        <td><div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                              DISPONIBLE
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                              NO DISPONIBLE
+                            </label>
+                          </div></td>
+                        <td><input class="form-control" type="text" placeholder="INGRESE PRECIO"></td>
+                        <td>
+                            <button type="button" class="btn btn-success" onclick="alert('PRODUCTO AGREGADO SATIFACTORIAMENTE!')">AGREGAR</button></td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+                
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-8">
                 <table class="table table-striped">
