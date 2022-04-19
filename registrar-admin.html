@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <!-- Page Preloder hola-->
+    <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
@@ -35,23 +35,38 @@
         <div class="humberger__menu__logo">
             <a href="#"><img src="img/logo1.png" alt=""></a>
         </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span>$150.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="img/bandera.jpg" alt="" style="width: 27px; height: 14px;">
+                <div>Español</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">ESPAÑOL</a></li>
+                    <li><a href="#">INGLES</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="login.html"><i class="fa fa-user"></i> INICIAR SESIÓN</a>
+            </div>
+        </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./pagina-administrador.html">Usuarios</a>
+                <li class="active"><a href="./index.html">INICIO</a></li>
+                <li><a href="./shop-grid.html">TIENDA</a></li>
+                <li><a href="#">PAGINAS</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="./pagina-administrador.html">ver usuarios</a></li>
+                        <li><a href="./shoping-cart.html">CARRITO</a></li>
+                        <li><a href="./checkout.html">Pedido</a></li>
                     </ul>
                 </li>
-
-                <li><a href="facturas.html">Facturas</a></li>
-
-                <li><a href="productos-admin.html">Productos</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="./stock-admin.html">Stock</a></li>
-                        <li><a href="./shop-details.html">Historial de Ventas</a></li>
-                    </ul>
-                </li>
-
+                <li><a href="./contact.html">CONTACTO</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -71,33 +86,47 @@
 
     <!-- Header Section Begin -->
     <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> petplanet@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="img/bandera.jpg" alt="" style="width: 27px; height: 14px;">
+                                <div>Español</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">Español</a></li>
+                                    <li><a href="#">Ingles</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="login.html"><i class="fa fa-user"></i> Iniciar Sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
                         <a href="./index.html"><img src="img/logo1.png" alt="" style="width: 119px; height: 80px;"></a>
                     </div>
-                </div>
-                <div class="col-lg-8">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="./pagina-administrador.html">Usuarios</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./pagina-administrador.html">ver usuarios</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="facturas.html">Facturas</a></li>
-    
-                            <li><a href="productos-admin.html">Productos</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./stock-admin.html">Stock</a></li>
-                                    <li><a href="./historial-de-ventas-admin.html">Historial de Ventas</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="registrar-admin.html">Registrar Admin</a></li>
-    
-                        </ul>
-                    </nav>
                 </div>
             </div>
             <div class="humberger__open">
@@ -106,113 +135,86 @@
         </div>
     </header>
     <!-- Header Section End -->
-    <div class="container">
-      <div class="row">
-          <div class="col-4">
-              <div class="input-group">
-                  <input type="search" class="form-control rounded" placeholder="INGRESE ID DE STOCK" aria-label="Search" aria-describedby="search-addon" />
-                  <button type="button" class="btn btn-outline-primary">BUSCAR</button>
-                </div>
-          </div>
-          <div class="col-4">
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
-                    DISPONIBLE
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                  <label class="form-check-label" for="flexCheckChecked">
-                    AGOTADO
-                  </label>
-                </div>
-          </div>
-      </div>
-      <br>
-      <h2>STOCK</h2>
-      <div class="row">
-          <div class="col-12">
-              <table class="table">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th scope="col">N° PRODUCTO</th>
-                      <th scope="col">PRODUCTO</th>
-                      <th scope="col">COLOR</th>
-                      <th scope="col">CANTIDAD</th>
-                      <th scope="col">ESTADO</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">132</th>
-                      <td>Identificación </td>
-                      <td>Azul</td>
-                      <td>30</td>
-                      <td>DISPONIBLE</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">223</th>
-                      <td>Identificación</td>
-                      <td>Morado</td>
-                      <td>10</td>
-                      <td>DISPONIBLE</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">243</th>
-                      <td>Identificación</td>
-                      <td>Rojo</td>
-                      <td>0</td>
-                      <td>AGOTADO</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">235</th>
-                      <td>Bandana</td>
-                      <td>Batman</td>
-                      <td>321</td>
-                      <td>DISPONIBLE</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">632</th>
-                      <td>Bandana</td>
-                      <td>Catdog</td>
-                      <td>43</td>
-                      <td>DISPONIBLE</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">723</th>
-                      <td>Correa Automática</td>
-                      <td>Negra</td>
-                      <td>54</td>
-                      <td>DISPONIBLE</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">834</th>
-                      <td>Arnes de tiras</td>
-                      <td>Verde</td>
-                      <td>45</td>
-                      <td>DISPONIBLE</td>
-                    </tr>
-
-                  </tbody>
-                </table>
-              
-              
-          </div>
-      </div>
-  </div>
 
     <!-- Hero Section Begin -->
-    <!-- Hero Section End -->
-
-    <!-- Categories Section Begin -->
     
-    <!-- Categories Section End -->
+    <!-- Hero Section End -->
+    <!-- Login -->
+    <section class="checkout spad">
+      <div class="container">
+          <div class="checkout__form">
+              <h4>Registro de Admin</h4>
+              <form action="#">
+                  <div class="row">
+                      <div class="col-lg-8 col-md-6">
+                          <div class="row">
+                              <div class="col-lg-6">
+                                  <div class="checkout__input">
+                                      <p>Primer Nombre<span>*</span></p>
+                                      <input type="text">
+                                  </div>
+                              </div>
+                              <div class="col-lg-6">
+                                  <div class="checkout__input">
+                                      <p>Apellidos<span>*</span></p>
+                                      <input type="text">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="checkout__input">
+                              <p>País<span></span></p>
+                              <input type="text">
+                          </div>
+                          <div class="checkout__input">
+                              <p>Ciudad<span>*</span></p>
+                              <input type="text">
+                          </div>
+                          <div class="checkout__input">
+                              <p>Región<span>*</span></p>
+                              <input type="text">
+                          </div>
+                          <div class="row">
+                              <div class="col-lg-6">
+                                  <div class="checkout__input">
+                                      <p>Telefono<span></span></p>
+                                      <input type="text">
+                                  </div>
+                              </div>
+                              <div class="col-lg-6">
+                                  <div class="checkout__input">
+                                      <p>Correo<span>*</span></p>
+                                      <input type="text">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="checkout__input">
+                                  <p>Contraseña<span>*</span></p>
+                                  <input type="password">
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <a href="login.html"><button class="site-btn" type="submit">Registrar Adimn</a></button>
+ 
+              </form>
+          </div>
+      </div>
+  </section>
+   
+<!-- login End -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-    <!-- Featured Section Begin -->
-    <!-- Banner End -->
-    <br>
-    <br>
+
     <!-- Footer Section Begin -->
     <footer class="footer spad">
         <div class="container">
@@ -241,7 +243,7 @@
                             <li><a href="#">Nuestro sitio en el mapa</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">Quienes somos</a></li>
+                            <li><a href="nosotros.html">Quienes somos</a></li>
                             <li><a href="#">Nuestros servicios</a></li>
                             <li><a href="#">Proyectos</a></li>
                             <li><a href="#">Contacto</a></li>
