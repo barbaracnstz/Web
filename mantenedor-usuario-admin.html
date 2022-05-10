@@ -37,26 +37,12 @@
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./pagina-administrador.html">Usuarios</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="./pagina-administrador.html">ver usuarios</a></li>
-                        <li><a href="./registrar-adm4in.html">Registrar Admin</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Permisos</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="permisos-admin.html">Perfiles</a></li>
-                    </ul>
-                </li>
-                <li><a href="./facturas.html">Facturas</a></li>
-
-                <li><a href="productos-admin.html">Productos</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="./stock-admin.html">Stock</a></li>
-                        <li><a href="./historial-de-ventas-admin.html">Historial de Ventas</a></li>
-                    </ul>
-                </li>
-                <li><a href="registrar-admin.html">Registrar Admin</a></li>
+                <ul>
+                    <li class="active"><a href="#">INICIO</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">MIS DATOS</a>
+                    <li><a href="#">CERRAR SESIÓN</a></li>
+                </ul>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -86,20 +72,11 @@
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./pagina-administrador.html">Usuarios</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./pagina-administrador.html">ver usuarios</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./facturas.html">Facturas</a></li>
-    
-                            <li><a href="productos-admin.html">Productos</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./stock-admin.html">Stock</a></li>
-                                    <li><a href="./historial-de-ventas-admin.html">Historial de Ventas</a></li>
-                                </ul>
-                            </li>
-    
+                            <li class="active"><a href="#">INICIO</a></li>
+                            <li><a href="#">NOSOTROS</a></li>
+                            <li><a href="#">MIS DATOS</a>
+                            <li><a href="registrar-admin.html">CERRAR SESIÓN</a></li>
+                            
                         </ul>
                     </nav>
                 </div>
@@ -113,65 +90,70 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-8">
+                <h4>MANTENEDOR DE USURARIO</h4>
                 <div class="input-group">
                     <input type="search" class="form-control rounded" placeholder="INGRESE ID DE USUARIO" aria-label="Search" aria-describedby="search-addon" />
                 </div>
                     <button type="button" class="btn btn-outline-primary">BUSCAR</button>
-                  </div>
+                </div>
             
             <div class="col-4">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      ADMINISTRADOR
+                    ADMINISTRADOR
                     </label>
-                  </div>
-                  <div class="form-check">
+                </div>
+                <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      REGISTRADO
+                    REGISTRADO
                     </label>
-                  </div>
+                </div>
             </div>
         </div>
         <br>
-        <h2>USUARIOS</h2>
         <div class="row">
             <div class="col-12">
                 <table class="table">
                     <thead class="thead-dark">
                       <tr>
-                        <th scope="col">RUT CLIENTE</th>
-                        <th scope="col">NOMBRE</th>
-                        <th scope="col">CORREO</th>
-                        <th scope="col">TIPO</th>
-                        <th scope="col">ESTADO CUENTA</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">TIPO USUARIO</th>
+                        <th scope="col">RUT</th>
+                        <th scope="col">NOMBRES</th>
+                        <th scope="col">APELLIDOS</th>
+                        <th scope="col">DIRECCION</th>
+                        <th scope="col">CON SUBSCRIPCIÓN</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1233525-2</th>
-                        <td>Mark</td>
-                        <td>fels@gmail.com</td>
-                        <td>REGISTRADO</td>
-                        <td><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">ACTIVO</label><br></td>
+                        <th scope="row">12</th>
+                        <td>Registrado</td>
+                        <td>20653864-k</td>
+                        <td>Juan</td>
+                        <td>Perez</td>
+                        <td>Juan Bautista12</td>
+                        <td>NO</td>
                       </tr>
                       <tr>
-                        <th scope="row">86257723-9</th>
-                        <td>Jacob</td>
-                        <td>fels@gmail.com</td>
-                        <td>REGISTRADO</td>
-                        <td><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">ACTIVO</label><br></td>
+                        <th scope="row">12</th>
+                        <td>Registrado</td>
+                        <td>20653864-k</td>
+                        <td>Juan</td>
+                        <td>Perez</td>
+                        <td>Juan Bautista12</td>
+                        <td>NO</td>
                       </tr>
                       <tr>
-                        <th scope="row">76342937-3</th>
-                        <td>Larry</td>
-                        <td>fels@gmail.com</td>
-                        <td>ADMINISTRADOR</td>
-                        <td><input type="radio" id="html" name="fav_language" value="HTML">
-                            <label for="html">ACTIVO</label><br></td>
+                        <th scope="row">12</th>
+                        <td>Registrado</td>
+                        <td>20653864-k</td>
+                        <td>Juan</td>
+                        <td>Perez</td>
+                        <td>Juan Bautista12</td>
+                        <td>NO</td>
                       </tr>
                     </tbody>
                   </table>
@@ -181,6 +163,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Hero Section Begin -->
     <!-- Hero Section End -->

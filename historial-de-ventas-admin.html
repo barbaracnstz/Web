@@ -37,25 +37,12 @@
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./pagina-administrador.html">Usuarios</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="./pagina-administrador.html">ver usuarios</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Permisos</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="#">Perfiles</a></li>
-                    </ul>
-                </li>
-                <li><a href="facturas.html">Facturas</a></li>
-
-                <li><a href="#">Productos</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="./stock-admin.html">Stock</a></li>
-                        <li><a href="./shop-details.html">Historial de Ventas</a></li>
-                    </ul>
-                </li>
-
+                <ul>
+                    <li class="active"><a href="#">INICIO</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">MIS DATOS</a>
+                    <li><a href="#">CERRAR SESIÓN</a></li>
+                </ul>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -85,20 +72,12 @@
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./pagina-administrador.html">Usuarios</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./pagina-administrador.html">ver usuarios</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./shop-grid.html">Facturas</a></li>
-    
-                            <li><a href="#">Productos</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./stock-admin.html">Stock</a></li>
-                                    <li><a href="./shop-details.html">Historial de Ventas</a></li>
-                                </ul>
-                            </li>
-    
+                            <ul>
+                                <li class="active"><a href="#">INICIO</a></li>
+                                <li><a href="#">NOSOTROS</a></li>
+                                <li><a href="#">MIS DATOS</a>
+                                <li><a href="#">CERRAR SESIÓN</a></li>
+                            </ul>
                         </ul>
                     </nav>
                 </div>
@@ -112,11 +91,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-8">
-                <div class="input-group">
-                    <input type="search" class="form-control rounded" placeholder="INGRESE ID CLIENTE" aria-label="Search" aria-describedby="search-addon" />
                 </div>
-                    <button type="button" class="btn btn-outline-primary">BUSCAR</button>
-                  </div>
         </div>
         <br>
         <h2>HISTORIAL DE VENTAS</h2>
@@ -125,55 +100,76 @@
                 <table class="table">
                     <thead class="thead-dark">
                       <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Cliente</th>
-                        <th scope="col">Fecha Venta</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col">Total Venta</th>
+                        <th scope="col">NRO FACTURA</th>
+                        <th scope="col">FECHA</th>
+                        <th scope="col">NOMBRE CLIENTE</th>
+                        <th scope="col">SUBSCRITO</th>
+                        <th scope="col">MONTO TOTAL</th>
+                        <th scope="col">ESTADO ACTUAL</th>
+                        <th scope="col">DETALLE</th>
+                        <th scope="col">CAMBIAR ESTADO</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Benjamin Calderon</td>
+                        <th scope="row">425</th>
                         <td>10/04/2022</td>
-                        <td>Venta Exitosa</td>
+                        <td>Claudio Parra</td>
+                        <td>No</td>
                         <td>$56.990</td>
+                        <td>Despachado</td>
+                        <td><a href="#">Ver detalle</a></td>
+                        <td><a href="#">Despachado</a><a href="#"> Entregado</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Carolina Giraldo</td>
-                        <td>09/04/2022</td>
-                        <td>Venta Exitosa</td>
-                        <td>$10.990</td>
+                        <th scope="row">425</th>
+                        <td>10/04/2022</td>
+                        <td>Claudio Parra</td>
+                        <td>No</td>
+                        <td>$56.990</td>
+                        <td>Despachado</td>
+                        <td><a href="#">Ver detalle</a></td>
+                        <td><a href="#">Despachado</a><a href="#"> Entregado</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
-                        <td>Harry Style</td>
-                        <td>07/04/2022</td>
-                        <td>Venta Exitosa</td>
-                        <td>$25.990</td>
+                        <th scope="row">425</th>
+                        <td>10/04/2022</td>
+                        <td>Claudio Parra</td>
+                        <td>No</td>
+                        <td>$56.990</td>
+                        <td>Despachado</td>
+                        <td><a href="#">Ver detalle</a></td>
+                        <td><a href="#">Despachado</a><a href="#"> Entregado</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">4</th>
-                        <td>Adele Blue</td>
-                        <td>06/04/2022</td>
-                        <td>Venta Exitosa</td>
-                        <td>$10.990</td>
+                        <th scope="row">425</th>
+                        <td>10/04/2022</td>
+                        <td>Claudio Parra</td>
+                        <td>No</td>
+                        <td>$56.990</td>
+                        <td>Despachado</td>
+                        <td><a href="#">Ver detalle</a></td>
+                        <td><a href="#">Despachado</a><a href="#"> Entregado</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">5</th>
-                        <td>Edward Sheeran</td>
-                        <td>05/04/2022</td>
-                        <td>Venta Exitosa</td>
-                        <td>$21.990</td>
+                        <th scope="row">425</th>
+                        <td>10/04/2022</td>
+                        <td>Claudio Parra</td>
+                        <td>No</td>
+                        <td>$56.990</td>
+                        <td>Despachado</td>
+                        <td><a href="#">Ver detalle</a></td>
+                        <td><a href="#">Despachado</a><a href="#"> Entregado</a></td>
                       </tr>
                       <tr>
-                        <th scope="row">6</th>
-                        <td>Pablo Alborán</td>
-                        <td>03/04/2022</td>
-                        <td>Venta Exitosa</td>
-                        <td>$15.990</td>
+                        <th scope="row">425</th>
+                        <td>10/04/2022</td>
+                        <td>Claudio Parra</td>
+                        <td>No</td>
+                        <td>$56.990</td>
+                        <td>Despachado</td>
+                        <td><a href="#">Ver detalle</a></td>
+                        <td><a href="#">Despachado</a><a href="#"> Entregado</a></td>
                       </tr>
                     </tbody>
                   </table>
