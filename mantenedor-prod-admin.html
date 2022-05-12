@@ -100,67 +100,60 @@
     <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
         <div class="row borde-bootstrap-row">
             <div class="col-sm-6">
-                <div class="form-group">
-                    <label for="rut">RUT</label>
-                    <input class="form-control" type="text" name="rut" id="rut" 
-                        aria-describedby="rut-help" placeholder="Ingresa tu RUT">
-                    <small id="rut-help" class="form-text text-muted">
-                        Escribe tu RUT sin puntos y con guión, por ejemplo: 16560241-2
-                    </small>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="rut" class="col-form-label col-sm-5">ID</label>
+                    <div class="col-sm-7">
+                        <input class="col-form-control" type="number" name="id" id="id" 
+                            aria-describedby="rut-help" >
+                        <small id="rut-help" class="form-text text-muted">
+                            
+                        </small>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="nombres">Nombres</label>
-                    <input class="form-control" type="text" name="nombres" id="nombres" 
-                        placeholder="Escribe aquí tus nombres">
+
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="nombres">Categoria</label>
+                    <div class="col-sm-7">
+                        <select name="select" class="col-form-control">
+                            <option value="value1">Perro</option>
+                            <option value="value3">Gato</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="apellidos">Apellidos</label>
-                    <input class="form-control" type="text" name="apellidos" id="apellidos" 
-                        placeholder="Escribe aquí tus apellidos">
+
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5"for="apellidos">Nombre</label>
+                    <div class="col-sm-7">
+                        <input  type="text" name="apellidos" id="apellidos" >
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="correo">Correo</label>
-                    <input class="form-control" type="email" name="correo" id="correo" 
-                        aria-describedby="correo-help" placeholder="Escribe aquí tu correo">
-                    <small id="correo-help" class="form-text text-muted">
-                        Escribe tu correo incluyendo: nombre, @ y dominio, por ejemplo: atorres@duocuc.cl
-                    </small>
-                </div>
-                <div class="form-group">
-                    <label for="direccion">Dirección</label>
-                    <textarea class="form-control" name="direccion" id="direccion" cols="60" rows="5" 
-                        aria-describedby="direccion-help"placeholder="Escribe aquí tu dirección"></textarea>
+                
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="direccion">Descripción</label>
+                    <textarea class="col-form-label col-sm-5" name="direccion" id="direccion" cols="80" rows="5" 
+                        aria-describedby="direccion-help"placeholder="Descripcion"></textarea>
                     <small id="direccion-help" class="form-text text-muted">
                         Escribe tu direción completa con: calle, número, comuna y región
                     </small>
                 </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="consubscripcion" name="consubscripcion" 
-                        aria-describedby="consubscripcion-help">
-                    <label class="form-check-label" for="consubscripcion">Con subscripción</label>
-                    <small id="consubscripcion-help" class="form-text text-muted">
-                        Deseo subscribirme con un aporte de $3.000 mensuales
-                        y obtener un 5% de descuento en mis copmpras
-                    </small>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="Precio">Precio</label>
+                    <input  type="number" name="Precio" id="Precio" >
                 </div>
-                <div class="form-group">
-                    <br>
-                    <label for="password">Contraseña</label>
-                    <input class="form-control" type="password" name="password" id="password" 
-                        aria-describedby="password-help" placeholder="Escribe aquí tu contraseña">
-                    <small id="password-help" class="form-text text-muted">
-                        La contraseña debe tener un mínimo de 10 caracteres y 
-                        debe contener al menos una mayúscula y un número
-                    </small>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="Precio">Descuento suscriptor</label>
+                    <input  type="number" name="subscriptor" id="subscriptor" placeholder="Ingrese porcentaje suscriptor">
                 </div>
-                <div class="form-group">
-                    <label for="password2">Repetir contraseña</label>
-                    <input class="form-control" type="password" name="password2" id="password2" 
-                        placeholder="Repite aquí tu contraseña">
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="Precio">Descuento por oferta</label>
+                    <input  type="number" name="oferta" id="oferta" placeholder="Ingrese porcentaje por oferta" >
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="form-group">
+                <div class="form-group row">
                     <img src="images/cristian_gomez.jpg" alt="" name="fotoperfil" id="fotoperfil">
                     <br><br>
                     <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
@@ -192,7 +185,7 @@
                     <tbody>
                       <tr>
                         <th scope="row"><form>
-                            <div class="form-group">
+                            <div class="form-group row">
                               <input type="file" class="form-control-file" id="exampleFormControlFile1">
                             </div>
                           </form></th>
