@@ -69,14 +69,13 @@
                         <a href="./index.html"><img src="img/logo1.png" alt="" style="width: 119px; height: 80px;"></a>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./inicio-admin.html">INICIO</a></li>
+                            <li class="active"><a href="#">INICIO</a></li>
                             <li><a href="#">NOSOTROS</a></li>
                             <li><a href="#">MIS DATOS</a>
-                            <li><a href="./administrar.html">ADMINISTRAR</a>
-                            <li><a href="#">CERRAR SESIÓN</a></li>
+                            <li><a href="registrar-admin.html">CERRAR SESIÓN</a></li>
                             
                         </ul>
                     </nav>
@@ -87,9 +86,143 @@
             </div>
         </div>
     </header>
-    <!-- vista admin -->
+    <!-- Header Section End -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-8">
+                <h4>MANTENEDOR DE BOGEGA</h4>
+            </div>
+        </div>
+<!--FORMILARIO-->
+<div class="container">
+    <div class="row borde-bootstrap-row">
+    </div>
+    <br>
+    <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
+        <div class="row borde-bootstrap-row">
+            <div class="col-sm-6">
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="rut" class="col-form-label col-sm-5">ID</label>
+                    <div class="col-sm-7">
+                        <input class="col-form-control" type="number" name="rut" id="rut" 
+                            aria-describedby="rut-help" >
+                        <small id="rut-help" class="form-text text-muted">
+                            
+                        </small>
+                    </div>
+                </div>
 
 
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="nombres">Categoria</label>
+                    <div class="col-sm-7">
+                        <select name="select" class="col-form-control">
+                            <option value="value1">Perro</option>
+                            <option value="value3">Gato</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="nombres">Nombres</label>
+                    <div class="col-sm-7">
+                        <select name="select" class="col-form-control">
+                            <option value="value1">Bandana Batman</option>
+                            <option value="value3">Bandana Catgod</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="rut" class="col-form-label col-sm-5">Cantidad</label>
+                    <div class="col-sm-7">
+                        <input class="col-form-control" type="number" name="rut" id="rut" 
+                            aria-describedby="rut-help" >
+                        <small id="rut-help" class="form-text text-muted">
+                            
+                        </small>
+                    </div>
+                </div>
+<br>
+
+                <div class="row borde-bootstrap-row">
+                    <button type="submit" class="btn btn-primary">Guardar  </button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+                
+                
+                
+                
+                
+            </div>
+            
+            <div class="col-sm-6">
+                <div class="form-group row">
+                    <img src="images/cristian_gomez.jpg" alt="" name="fotoperfil" id="fotoperfil">
+                    <br><br>
+                    <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<br>
+        <div class="row">
+            <div class="col-12">
+                <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">CATEGORIA</th>
+                        <th scope="col">NOMBRES</th>
+                        <th scope="col">ESTADO</th>
+                        <th scope="col">OPCIONES</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">27</th>
+                        <td>Perro</td>
+                        <td>Bandana Catgod</td>
+                        <td>Vendido</td>
+                        <td><button href="#">Eliminar</td></button>
+                      </tr>
+                      <tr>
+                        <th scope="row">27</th>
+                        <td>Perro</td>
+                        <td>Bandana Catgod</td>
+                        <td>Vendido</td>
+                        <td><button href="#">Eliminar</td></button>
+                      </tr>
+                      <tr>
+                        <th scope="row">27</th>
+                        <td>Perro</td>
+                        <td>Bandana Catgod</td>
+                        <td>Vendido</td>
+                        <td><button href="#">Eliminar</td></button>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Hero Section Begin -->
+    <!-- Hero Section End -->
+
+    <!-- Categories Section Begin -->
+    
+    <!-- Categories Section End -->
+
+    <!-- Featured Section Begin -->
+    <!-- Banner End -->
     <br>
     <br>
     <!-- Footer Section Begin -->

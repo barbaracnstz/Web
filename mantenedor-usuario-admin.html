@@ -91,28 +91,122 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-8">
                 <h4>MANTENEDOR DE USURARIO</h4>
-                <div class="input-group">
-                    <input type="search" class="form-control rounded" placeholder="INGRESE ID DE USUARIO" aria-label="Search" aria-describedby="search-addon" />
+            </div>
+        </div>
+<!--FORMILARIO-->
+<div class="container">
+    <div class="row borde-bootstrap-row">
+    </div>
+    <br>
+    <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
+        <div class="row borde-bootstrap-row">
+            <div class="col-sm-6">
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="rut" class="col-form-label col-sm-5">ID</label>
+                    <div class="col-sm-7">
+                        <input class="col-form-control" type="number" name="rut" id="rut" 
+                            aria-describedby="rut-help" >
+                        <small id="rut-help" class="form-text text-muted">
+                            
+                        </small>
+                    </div>
                 </div>
-                    <button type="button" class="btn btn-outline-primary">BUSCAR</button>
+
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="nombres">Tipo usuario</label>
+                    <div class="col-sm-7">
+                        <label for="hombre">Cliente</label>
+                <input type="radio" name="sexo" id="hombre" required class="radio_sexo">
+                <label for="mujer">Administrador</label>
+                <input type="radio" name="sexo" id="nodecirlo" required class="radio_sexo">
+                    </div>
                 </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="rut" class="col-form-label col-sm-5">RUT</label>
+                    <div class="col-sm-7">
+                        <input class="col-form-control" type="number" name="rut" id="rut" 
+                            aria-describedby="rut-help" >
+                        <small id="rut-help" class="form-text text-muted">
+                            
+                        </small>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="nombres">Nombres</label>
+                    <div class="col-sm-7">
+                        <input  type="text" name="nombres" id="nombres" >
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="apellidos">Apellidos</label>
+                    <div class="col-sm-7">
+                        <input  type="text" name="apellidos" id="apellidos">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-5" for="direccion">Dirección</label>
+                    <div class="col-sm-7">
+                    <textarea class="form-control" name="direccion" id="direccion" cols="60" rows="5" 
+                        aria-describedby="direccion-help"placeholder="Escribe aquí tu dirección"></textarea>
+                    <small id="direccion-help" class="form-text text-muted">
+                        Escribe tu direción completa con: calle, número, comuna y región
+                    </small>
+                </div>
+                </div>
+                <div class="form-check row">
+                    <input type="checkbox" class="form-check-input" id="consubscripcion" name="consubscripcion" 
+                        aria-describedby="consubscripcion-help">
+                    <label  class="col-form-label col-sm-5" for="consubscripcion">Con subscripción</label>
+                    <div class="col-sm-7">
+                        <small id="consubscripcion-help" class="form-text text-muted">
+                        Deseo subscribirme con un aporte de $3.000 mensuales
+                        y obtener un 5% de descuento en mis compras
+                        </small>
+                </div>
+                </div>
+<br>
+                <div class="form-group row">
+                    <br>
+                    <label class="col-form-label col-sm-5" for="password" >Contraseña</label>
+                    <div class="col-sm-7">
+                    <input class="form-control" type="password" name="password" id="password" 
+                        aria-describedby="password-help" placeholder="Escribe aquí tu contraseña">
+                    <small id="password-help" class="form-text text-muted">
+                        La contraseña debe tener un mínimo de 10 caracteres y 
+                        debe contener al menos una mayúscula y un número
+                    </small>
+                </div>
+                </div>
+
+                <div class="row borde-bootstrap-row">
+                    <button type="submit" class="btn btn-primary">Guardar contraseña </button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+                
+                
+                
+                
+                
+            </div>
             
-            <div class="col-4">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    ADMINISTRADOR
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                    REGISTRADO
-                    </label>
+            <div class="col-sm-6">
+                <div class="form-group row">
+                    <img src="images/cristian_gomez.jpg" alt="" name="fotoperfil" id="fotoperfil">
+                    <br><br>
+                    <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
                 </div>
             </div>
         </div>
-        <br>
+    </form>
+</div>
+<br>
         <div class="row">
             <div class="col-12">
                 <table class="table">
@@ -125,6 +219,7 @@
                         <th scope="col">APELLIDOS</th>
                         <th scope="col">DIRECCION</th>
                         <th scope="col">CON SUBSCRIPCIÓN</th>
+                        <th scope="col">IMAGEN</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -136,6 +231,7 @@
                         <td>Perez</td>
                         <td>Juan Bautista12</td>
                         <td>NO</td>
+                        <td>||</td>
                       </tr>
                       <tr>
                         <th scope="row">12</th>
@@ -145,6 +241,7 @@
                         <td>Perez</td>
                         <td>Juan Bautista12</td>
                         <td>NO</td>
+                        <td>||</td>
                       </tr>
                       <tr>
                         <th scope="row">12</th>
@@ -154,6 +251,7 @@
                         <td>Perez</td>
                         <td>Juan Bautista12</td>
                         <td>NO</td>
+                        <td>||</td>
                       </tr>
                     </tbody>
                   </table>
