@@ -35,13 +35,7 @@
         <div class="humberger__menu__logo">
             <a href="#"><img src="img/logo1.png" alt=""></a>
         </div>
-        <div class="humberger__menu__cart">
-            <ul>
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-            </ul>
-            <div class="header__cart__price">item: <span>$150.00</span></div>
-        </div>
+        
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
                 <img src="img/bandera.jpg" alt="" style="width: 27px; height: 14px;">
@@ -66,15 +60,12 @@
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">INICIO</a></li>
-                <li><a href="./shop-grid.html">TIENDA</a></li>
-                <li><a href="#">PAGINAS</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="./shoping-cart.html">CARRITO</a></li>
-                        <li><a href="./checkout.html">Pedido</a></li>
-                    </ul>
-                </li>
-                <li><a href="./contact.html">CONTACTO</a></li>
+                <li class="active"><a href="./index-user.html">INICIO</a></li>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="informacion-perfil.html">MIS DATOS</a></li>
+                <li><a href="#">MIS COMPRAS</a></li>
+                <li><a href="./carrito.html">CARRITO</a></li>
+                <li><a href="index.html">CERRAR SESIÓN</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -121,6 +112,7 @@
                                     <li><a href="#">Ingles</a></li>
                                 </ul>
                             </div>
+                            <!--
                             <div class="dropdown mb-3">
                                 <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuEnlace"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-user"></i>
@@ -131,7 +123,7 @@
                                     <a href="shoping-cart.html" class="dropdown-item">Carro compra</a>
                                     <a href="#" class="dropdown-item">Ver seguimiento de compra</a>
                                 </div>            
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -144,30 +136,19 @@
                         <a href="./index.html"><img src="img/logo1.png" alt="" style="width: 119px; height: 80px;"></a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-9">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./perfil.html">Inicio</a></li>
-                            <li><a href="./shop-grid.html">Tienda</a></li>
-                            <li><a href="#">Paginas</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./shoping-cart.html">Carrito</a></li>
-                                    <li><a href="./checkout.html">Pedido</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./contact.html">Contacto</a></li>
+                            <li ><a href="./index-user.html">INICIO</a></li>
+                            <li><a href="./nosotros.html">NOSOTROS</a></li>
+                            <li class="active"><a href="informacion-perfil.html">MIS DATOS</a></li>
+                            <li><a href="#">MIS COMPRAS</a></li>
+                            <li><a href="./carrito.html">CARRITO</a></li>
+                            <li><a href="index.html">CERRAR SESIÓN</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
-                    <div class="header__cart">
-                        <ul> <!--REVISAR-->
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                        </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
-                    </div>
-                </div>
+                
             </div>
             <div class="humberger__open">
                 <i class="fa fa-bars"></i>
@@ -179,14 +160,14 @@
         <div class="container">
             <div class="checkout__form">
                 <div class="h6">
-                <h4>Datos del usuario</h4></div>
+                <h4>Mis datos</h4></div>
                 <form action="#">
                     <div class="row">
                         <div class="col-lg-8 col-md-6">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
-                                        <p>Pirmer Nombre<span>*</span></p>
+                                        <p>Primer Nombre<span>*</span></p>
                                         <input type="text"  class="form-control"  value="Benjamin">
                                     </div>
                                 </div>
@@ -197,10 +178,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="checkout__input">
-                                <p>Pais<span>*</span></p>
-                                <input type="text"  class="form-control"  value="Chile"> 
-                            </div>
+                            
                             <div class="checkout__input">
                                 <p>Dirección <span>*</span></p>
                                 <input type="text"  class="form-control"  value="Dieciocho"> 
@@ -214,10 +192,7 @@
                                 <p>Región <span>*</span></p>
                                 <input type="text"  class="form-control"  value="Metropolitana"> 
                             </div>
-                            <div class="checkout__input">
-                                <p>Codigo postal <span>*</span></p>
-                                <input type="text"  class="form-control"  value="82320000"> 
-                            </div>
+                            
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="checkout__input">
@@ -232,21 +207,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-10">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Deseo subscribirme con un aporte de $1.000 mensuales con el cual tengo 5% de descuento en mi compra
-                                    </label>
-                                  </div>
-
-                            </div>
+                            
                     <br>
                     <button class="site-btn" type="submit">GUARDAR</a></button>
                     
-                    <a href="seguimiento- pedido.html"><button class="site-btn" type="submit">SEGUIMIENTO</a></button>
                     
-  
+
                 </form>
             </div>
         </div>
