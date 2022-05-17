@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/formulario.css">
 </head>
 
 <body>
@@ -58,15 +60,10 @@
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">INICIO</a></li>
-                <li><a href="./shop-grid.html">TIENDA</a></li>
-                <li><a href="#">PAGINAS</a>
-                    <ul class="header__menu__dropdown">
-                        <li><a href="./shoping-cart.html">CARRITO</a></li>
-                        <li><a href="./checkout.html">Pedido</a></li>
-                    </ul>
-                </li>
-                <li><a href="./contact.html">CONTACTO</a></li>
+                <li><a href="./index.html">INICIO</a></li>
+                <li class="active"><a href="./registro.html">REGISTRARSE</a></li>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="./login.html">INGRESAR</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -131,27 +128,14 @@
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Inicio</a></li>
-                            <li><a href="./shop-grid.html">Tienda</a></li>
-                            <li><a href="#">Paginas</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./shoping-cart.html">Carrito</a></li>
-                                    <li><a href="./checkout.html">Pedido</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./contact.html">Contacto</a></li>
+                            <li><a href="./index.html">INICIO</a></li>
+                            <li class="active"><a href="./registro.html">REGISTRARSE</a></li>
+                            <li><a href="./nosotros.html">NOSOTROS</a></li>
+                            <li><a href="./login.html">INGRESAR</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
-                    <div class="header__cart">
-                        <ul> <!--REVISAR-->
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                        </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
-                    </div>
-                </div>
+                
             </div>
             <div class="humberger__open">
                 <i class="fa fa-bars"></i>
@@ -164,96 +148,102 @@
     
     <!-- Hero Section End -->
     <!-- Login -->
-    <section class="checkout spad">
-      <div class="container">
-          <div class="checkout__form">
-              <h4>Registro de usuario</h4>
-              <form action="#">
-                  <div class="row">
-                      <div class="col-lg-8 col-md-6">
-                          <div class="row">
-                              <div class="col-lg-6">
-                                  <div class="checkout__input">
-                                      <p>Primer Nombre<span>*</span></p>
-                                      <input type="text">
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="checkout__input">
-                                      <p>Apellidos<span>*</span></p>
-                                      <input type="text">
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="checkout__input">
-                              <p>País<span>*</span></p>
-                              <input type="text">
-                          </div>
-                          <div class="checkout__input">
-                              <p>Direccion<span>*</span></p>
-                              <input type="text" placeholder="Calle" class="checkout__input__add">
-                              <input type="text" placeholder="Numero de departamento (opcional)">
-                          </div>
-                          <div class="checkout__input">
-                              <p>Ciudad<span>*</span></p>
-                              <input type="text">
-                          </div>
-                          <div class="checkout__input">
-                              <p>Región<span>*</span></p>
-                              <input type="text">
-                          </div>
-                          <div class="checkout__input">
-                              <p>Código Postal<span>*</span></p>
-                              <input type="text">
-                          </div>
-                          <div class="row">
-                              <div class="col-lg-6">
-                                  <div class="checkout__input">
-                                      <p>Telefono<span>*</span></p>
-                                      <input type="text">
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="checkout__input">
-                                      <p>Correo<span>*</span></p>
-                                      <input type="text">
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-4">
-                              <div class="checkout__input">
-                                  <p>Contraseña<span>*</span></p>
-                                  <input type="password">
-                              </div>
-                          </div>
-                          </div>
-                          <div class="checkout__input__checkbox">
-                              <label for="acc">
-                                  Acepto terminos y condiciones
-                                  <input type="checkbox" id="acc">
-                                  <span class="checkmark"></span>
-                              </label>
-                          </div>
-                          <p>Crear una cuenta con la Informacion de abajo. Si eres un cliente registrado , por favor inicia sesion en la parte de arriba de la pagina</p>
-                      </div>
-                  </div>
-                  
-                  <a href="login.html"><button class="site-btn" type="submit">Registrar</a></button>
- 
-              </form>
-          </div>
-      </div>
-  </section>
-   
+    <div class="centrar">
+        <button id="mostrar-bordes">Mostrar u ocultar los bordes de las filas de Bootstrap</button>
+    </div>
+    <div class="container">
+        <div class="row borde-bootstrap-row">
+            <h4>Registro Cliente</h4>
+        </div>
+        <br>
+        <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
+            <div class="row borde-bootstrap-row">
+                <div class="col-sm-6">
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-5" for="rut" class="col-form-label col-sm-5">ID</label>
+                        <div class="col-sm-7">
+                            <input class="col-form-control" type="number" name="rut" id="rut" 
+                                aria-describedby="rut-help" >
+                            <small id="rut-help" class="form-text text-muted">
+                                
+                            </small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-5" for="nombres">Nombres</label>
+                        <div class="col-sm-6">
+                            <input  type="text" name="nombres" id="nombres" >
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-5" for="apellidos">Apellidos</label>
+                        <div class="col-sm-7">
+                            <input  type="text" name="apellidos" id="apellidos">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-5"  for="correo">Correo</label>
+                        <div class="col-sm-7">
+                        <input class="form-control" type="email" name="correo" id="correo" 
+                            aria-describedby="correo-help" placeholder="Escribe aquí tu correo">
+                        <small id="correo-help" class="form-text text-muted">
+                            Escribe tu correo incluyendo: nombre, @ y dominio, por ejemplo: atorres@duocuc.cl
+                        </small>
+                    </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-5" for="direccion">Dirección</label>
+                        <div class="col-sm-7">
+                        <textarea class="form-control" name="direccion" id="direccion" cols="60" rows="5" 
+                            aria-describedby="direccion-help"placeholder="Escribe aquí tu dirección"></textarea>
+                        <small id="direccion-help" class="form-text text-muted">
+                            Escribe tu direción completa con: calle, número, comuna y región
+                        </small>
+                    </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <br>
+                        <label class="col-form-label col-sm-5" for="password">Contraseña</label>
+                        <div class="col-sm-7">
+                        <input class="form-control" type="password" name="password" id="password" 
+                            aria-describedby="password-help" placeholder="Escribe aquí tu contraseña">
+                        <small id="password-help" class="form-text text-muted">
+                            La contraseña debe tener un mínimo de 10 caracteres y 
+                            debe contener al menos una mayúscula y un número
+                        </small>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-5" for="password2">Repetir contraseña</label>
+                        <div class="col-sm-7">
+                        <input class="form-control" type="password" name="password2" id="password2" 
+                            placeholder="Repite aquí tu contraseña">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6">
+                    <div class="form-group row">
+                        <img src="images/cristian_gomez.jpg" alt="" name="fotoperfil" id="fotoperfil">
+                        <br><br>
+                        <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+                    </div>
+                </div>
+            </div>
+            <div class="row borde-bootstrap-row">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                &nbsp;&nbsp;&nbsp;
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </div>
+        </form>
+    </div>
 <!-- login End -->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 
     <!-- Footer Section Begin -->
@@ -333,6 +323,11 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/validacion-formularios.js"></script>
 
 
 
