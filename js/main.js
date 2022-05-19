@@ -94,6 +94,36 @@
             }
         }
     });
+    $(document).ready(function() {
+        $('#btnMostrarRopa').click(function(){
+            $.get("http://fakestoreapi.com/products",
+                function(data) {
+                    debugger
+                    $.each(data, 
+                        function(i, item) {
+                            var td1 = `<td>${item.title}</td>`;
+                            var td2 = `<td><img class="ropa" src="${item.image}"></td>`;
+                            var tr = `<tr>${td1}${td2}</tr>`;
+                            $('#tblCategorias').append(tr);
+                        });
+                });
+        });
+    });
+
+    $(document).ready(function() {
+        $('#btnMostrarPlatosComida').click(function(){
+            $.get("https://www.themealdb.com/api/json/v1/1/categories.php",
+                function(data) {
+                    $.each(data.categories, 
+                        function(i, item) {
+                            var td1 = `<td>${item.strCategory}</td>`;
+                            var td2 = `<td><img class="comida" src="${item.strCategoryThumb}"></td>`;
+                            var tr = `<tr>${td1}${td2}</tr>`;
+                            $('#tblCategorias').append(tr);
+                        });
+                });
+        });
+    });
 
 
     $('.hero__categories__all').on('click', function(){
