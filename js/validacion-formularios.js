@@ -38,7 +38,10 @@ $('#registro').validate({
             required: true,
         },
         "descuento": {
-            required: false,
+            required: true,
+        },
+        "oferta": {
+            required: true,
         },
         "nombre": {
             required: true,
@@ -70,11 +73,12 @@ $('#registro').validate({
             required: 'Debe ingresar precio',
         },
         "descuento": {
-            /*required: 'Debe ingresar descuento',*/
+            required: 'Debe ingresar descuento',
         },
-        "descuento2": {
-            /*required: 'Debe ingresar descuento',*/
+        "oferta": {
+            required: 'Debe ingresar descuento',
         },
+        
         "descripcion": {
             required: 'Debe ingresar descripción',
         },
@@ -197,9 +201,8 @@ $.validator.addMethod(
     },
     "El descuento debe entre 0 y 100"
 );
-
 $.validator.addMethod(
-    "descuento2",
+    "oferta",
     function(value, element, validate) {
         if (validate) {
             if(value < 0, value >100)
@@ -213,13 +216,15 @@ $.validator.addMethod(
 );
 
 
+
+
 $("#rut").rules("add", { rut: true });
 $("#correo").rules("add", { validateemail: true });
 $("#password").rules("add", { onenumber: true });
 $("#password").rules("add", { onemayus: true });
 $("#precio").rules("add", { precio: true });
 $("#descuento").rules("add", { descuento: true });
-$("#descuento2").rules("add", { descuento2: true });
+$("#oferta").rules("add", { oferta: true });
 
 $('#buscarfoto').on('change', function(e) {
     let file = '../images/' + e.target.files[0].name;
