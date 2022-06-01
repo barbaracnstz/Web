@@ -13,6 +13,9 @@ $('#registro').validate({
             required: true,
             email: true,
         },
+        "tipo": {
+            required: true,
+        },
         "direccion": {
             required: true,
         },
@@ -26,6 +29,7 @@ $('#registro').validate({
             equalTo : "#password",
         },
     },
+
     messages: {
         "rut": {
             required: 'Debe ingresar un RUT válido',
@@ -39,6 +43,9 @@ $('#registro').validate({
         "correo": {
             required: 'Debe ingresar su correo electrónico',
             email: 'Formato de correo incorrecto'
+        },
+        "tipo": {
+            required: 'Debe seleccionar al menos una opción',
         },
         "direccion": {
             required: 'Debe ingresar su dirección',
