@@ -3,6 +3,9 @@ $('#registro').validate({
         "rut": {
             required: true,
         },
+        "id": {
+            required: true,
+        },
         "nombres": {
             required: true,
         },
@@ -14,6 +17,9 @@ $('#registro').validate({
             email: true,
         },
         "tipo": {
+            required: true,
+        },
+        "precio": {
             required: true,
         },
         "direccion": {
@@ -28,7 +34,14 @@ $('#registro').validate({
             minlength : 10,
             equalTo : "#password",
         },
+        "descripcion": {
+            required: true,
+        },
+        "descuento": {
+            required: true,
+        },
     },
+
 
     messages: {
         "rut": {
@@ -46,6 +59,21 @@ $('#registro').validate({
         },
         "tipo": {
             required: 'Debe seleccionar al menos una opción',
+        },
+        "id": {
+            required: 'Debe ingresar un ID válido',
+        },
+        "precio": {
+            required: 'Debe ingresar precio',
+        },
+        "descuento": {
+            required: 'Debe ingresar descuento',
+        },
+        "descuento2": {
+            required: 'Debe ingresar descuento',
+        },
+        "descripcion": {
+            required: 'Debe ingresar descripción',
         },
         "direccion": {
             required: 'Debe ingresar su dirección',
@@ -133,10 +161,55 @@ $.validator.addMethod(
     "El formato del rut no es válido"
 );
 
+$.validator.addMethod(
+    "precio",
+    function(value, element, validate) {
+        if (validate) {
+            if(value < 0)
+                return false;
+            else
+                return true;
+        }
+    },
+    "El precio debe ser mayor o igual a 0"
+);
+
+$.validator.addMethod(
+    "descuento",
+    function(value, element, validate) {
+        if (validate) {
+            if(value < 0, value >100)
+                return false;
+            else
+                return true;
+            
+        }
+    },
+    "El descuento debe entre 0 y 100"
+);
+
+$.validator.addMethod(
+    "descuento2",
+    function(value, element, validate) {
+        if (validate) {
+            if(value < 0, value >100)
+                return false;
+            else
+                return true;
+            
+        }
+    },
+    "El descuento debe entre 0 y 100"
+);
+
+
 $("#rut").rules("add", { rut: true });
 $("#correo").rules("add", { validateemail: true });
 $("#password").rules("add", { onenumber: true });
 $("#password").rules("add", { onemayus: true });
+$("#precio").rules("add", { precio: true });
+$("#descuento").rules("add", { descuento: true });
+$("#descuento2").rules("add", { descuento2: true });
 
 $('#buscarfoto').on('change', function(e) {
     let file = '../images/' + e.target.files[0].name;
