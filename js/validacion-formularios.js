@@ -38,8 +38,11 @@ $('#registro').validate({
             required: true,
         },
         "descuento": {
-            required: true,
+            required: false,
         },
+        "nombre": {
+            required: true,
+        }
     },
 
 
@@ -67,10 +70,10 @@ $('#registro').validate({
             required: 'Debe ingresar precio',
         },
         "descuento": {
-            required: 'Debe ingresar descuento',
+            /*required: 'Debe ingresar descuento',*/
         },
         "descuento2": {
-            required: 'Debe ingresar descuento',
+            /*required: 'Debe ingresar descuento',*/
         },
         "descripcion": {
             required: 'Debe ingresar descripción',
@@ -87,9 +90,15 @@ $('#registro').validate({
             minlength: 'La mínima cantidad de caracteres de la contraseña es 10',
             equalTo: 'La repetición de contraseña debe coincidir con la contraseña original',
         },
+        "nombre": {
+            required: 'Debe ingresar un nombre',
+        }
     }
 });
-
+function validateDescuento(descuento) {
+    var re = docu;
+    return re.test(email);
+}
 function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
@@ -115,6 +124,7 @@ function dv(T) {
 
 // Uso de la función validateRut
 // alert( Fn.validateRut('16560241-2') ? 'válido' : 'inválido');
+
 
 $.validator.addMethod(
     "validateemail",
